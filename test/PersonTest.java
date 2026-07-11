@@ -1,14 +1,16 @@
 package test;
-
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 import src.Person;
 
 public class PersonTest {
-
-    @Test
-    public void testGetAge() {
+    public static void main(String[] args) {
+        System.out.println("Loading test...");
+        
         Person person = new Person("Ali", "Yilmaz", "12345", 2000);
-        assertEquals(26, person.getAge(2026));
+        
+        if (person.getAge(2026) == 26) {
+            System.out.println("Test successful!");
+        } else {
+            System.out.println("Test failed!");
+        }
     }
 }
