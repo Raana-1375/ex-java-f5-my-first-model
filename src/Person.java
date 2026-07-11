@@ -16,6 +16,7 @@ public class Person {
     public int getAge(int currentYear) {
         return currentYear - this.birthYear;
     }
+
     public String getName() {
         return name;
     }
@@ -26,5 +27,9 @@ public class Person {
 
     public String getIdentityNumber() {
         return identityNumber;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
     }
 }
